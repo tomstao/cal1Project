@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.30)  13 NOV 2024 08:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.30)  13 NOV 2024 09:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -198,9 +198,9 @@ Package lettrine.sty Info: Targeted height = 17.13887pt
 <bird.png, id=14, 642.4pt x 120.45pt>
 File: bird.png Graphic file (type png)
 <use bird.png>
-Package pdftex.def Info: bird.png  used on input line 56.
+Package pdftex.def Info: bird.png  used on input line 54.
 (pdftex.def)             Requested size: 172.5pt x 32.34364pt.
- [1 <./bird.png>] [2] [3] (./birds.aux)
+ [1 <./bird.png>] [2] [3] [4] (./birds.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -209,16 +209,16 @@ L3 programming layer <2024-02-20>
 Here is how much of TeX's memory you used:
  2239 strings out of 474116
  35912 string characters out of 5743682
- 1934187 words of memory out of 5000000
+ 1935187 words of memory out of 5000000
  24611 multiletter control sequences out of 15000+600000
  561278 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 79i,7n,93p,292b,305s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 79i,7n,93p,409b,305s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on birds.pdf (4 pages, 589994 bytes).
+Output written on birds.pdf (5 pages, 595327 bytes).
 PDF statistics:
- 92 PDF objects out of 1000 (max. 8388607)
- 53 compressed objects within 1 object stream
+ 95 PDF objects out of 1000 (max. 8388607)
+ 55 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

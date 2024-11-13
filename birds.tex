@@ -39,15 +39,13 @@
 
 \subsection*{The Introduction}
 
-\lettrine[lines=2]{S}{mall} birds, such as finches, alternate between flapping their wings and gliding, a behavior that is essential to their flight dynamics and energy conservation.
+\lettrine[lines=2]{S}{mall} birds, such as finches, alternate between flapping their wings and gliding, a behavior essential to managing energy during flight. This project focuses on the relationship between a bird’s flight speed, the power required, and the average energy consumed, exploring how different speeds impact energy efficiency.
 
-In this project, I will focus on understanding how the speed of a bird affects the lift power and the average energy spent during flight.
+The analysis uses calculus, particularly derivatives, to examine how variations in speed affect both power and energy expenditure. By calculating the rate of change in power requirements with respect to speed, we aim to determine optimal flight conditions that minimize energy use.
 
-By using derivatives, the aim of this project is to examine the relationship between flight speed, lift power, and energy expenditure.
+This approach draws on principles similar to those for fixed-wing aircraft, where energy and power requirements are essential to understanding flight dynamics. This project applies mathematical analysis to a biological context, using derivatives to derive meaningful insights about energy efficiency in bird flight.
 
-While the principles involved are similar to those of fixed-wing aircraft, my primary objective is to apply mathematical analysis to explore how changes in speed influence the energy efficiency of flight.
-
-Through this approach, we seek to gain a deeper understanding of the forces at play and the optimal conditions for minimizing energy expenditure in birds during flight.
+Through this study, we aim to gain a deeper understanding of the mathematical relationships governing flight, which aligns with the course objectives of applying calculus to real-world phenomena and deepening our understanding of energy optimization in dynamic systems.
 
 
 \subsection*{Part 1:}
@@ -114,7 +112,7 @@ E = \frac{P}{v}
 
 So, we can easily derive the equation for \( E(v) \):
 \[
-E = Av^2 + \frac{BL^2}{v^2}
+E(v) = Av^2 + \frac{BL^2}{v^2}
 \]
 Next, let's take the derivative of \(E\) respect to \(v\):
 \[
@@ -138,5 +136,11 @@ By observation, we found that both \(V_p\)(the speed \(V\) when power \(p\) is m
 
 Therefore, we can conclude that, the speed \(V_e\) for minimum energy is \(\sqrt[4]{3}\) times faster than the speed for minimum power \(V_p\).
 
+\subsection*{Part 4:}
+In applying the equation of Part 1 to bird flight we split the term \(Av^3\)into two
+parts: \(A_bv^3\) for the bird’s body and \(A_wv^3\) for its wings. Let \(x\) be the fraction of flying time spent in flapping mode. If \(m\) is the bird’s mass and all the lift occurs during flapping, then the lift is \(\frac{mg}{x}\) and so the power needed during flapping is:
+\[P_\text{flap} = (A_b+A_w)v^3+\frac{B(\frac{mg}{x})^2}{v}\]
+The power while wings are folded is \(P_\text{fold}=A_bv^3\). Show that the average power over an entire flight cycle is:
+\[\overline{P}=P_\text{flap}+(1-x)P_\text{fold} = A_bv^3+xA_wv^3+\frac{Bm^2g^2}{xv}\]
 
 \end{document}
