@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.30)  13 NOV 2024 12:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.30)  13 NOV 2024 12:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -312,37 +312,42 @@ Package lettrine.sty Info: Targeted height = 17.13887pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 16.99782pt (S);
 (lettrine.sty)             reported on input line 44.
-<bird.png, id=18, 642.4pt x 120.45pt>
-File: bird.png Graphic file (type png)
-<use bird.png>
-Package pdftex.def Info: bird.png  used on input line 56.
-(pdftex.def)             Requested size: 172.5pt x 32.34364pt.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.78 \]
-        [1 <./bird.png>] [2] [3] [4] [5] [6] (./birds.aux)
+l.51 \newpage
+              [1]
+<bird.png, id=24, 642.4pt x 120.45pt>
+File: bird.png Graphic file (type png)
+<use bird.png>
+Package pdftex.def Info: bird.png  used on input line 57.
+(pdftex.def)             Requested size: 172.5pt x 32.34364pt.
+ [2 <./bird.png>] [3] [4] [5] [6] [7] (./birds.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `birds.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 9254 strings out of 474116
- 144024 string characters out of 5743682
- 1937187 words of memory out of 5000000
+ 9255 strings out of 474116
+ 144030 string characters out of 5743682
+ 1939187 words of memory out of 5000000
  31506 multiletter control sequences out of 15000+600000
  561278 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  79i,7n,93p,409b,510s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on birds.pdf (7 pages, 612109 bytes).
+Output written on birds.pdf (8 pages, 612610 bytes).
 PDF statistics:
- 132 PDF objects out of 1000 (max. 8388607)
- 88 compressed objects within 1 object stream
- 17 named destinations out of 1000 (max. 500000)
+ 136 PDF objects out of 1000 (max. 8388607)
+ 91 compressed objects within 1 object stream
+ 18 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
