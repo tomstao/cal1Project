@@ -3,8 +3,9 @@
 \usepackage{graphicx}
 \usepackage{lettrine}
 \usepackage{hyperref}
-% \setlength{\parindent}{0pt}
-\setlength{\parindent}{10pt}  % Adjusts indent size
+\setlength{\parindent}{0pt}
+% \setlength{\parindent}{10pt}  
+% Adjusts indent size
 \begin{document}
 
 
@@ -39,7 +40,7 @@
 
 \newpage
 
-\subsection*{The Introduction}
+\subsection*{\itshape \large The Introduction}
 
 
 \lettrine[lines=2]{S}{mall} birds, such as finches, alternate between flapping their wings and gliding, a behavior essential to managing energy during flight. This project focuses on the relationship between a bird’s flight speed, the power required, and the average energy consumed, exploring how different speeds impact energy efficiency.
@@ -60,11 +61,11 @@ Through this study, we aim to gain a deeper understanding of the mathematical re
     \label{fig:bird}
 \end{figure}
 
-The power needed to propel an airplane forward at velocity \( v \) is: 
-\[
+{\large \bfseries The power needed to propel an airplane forward at velocity \( v \) is: 
+}\[
 P = Av^3 + \frac{BL^2}{v}.
 \]
-where \( A \) and \( B \) are positive constants specific to the particular aircraft, and \( L \) is the lift—the upward force supporting the weight of the plane (or bird).
+{\large \bfseries where \( A \) and \( B \) are positive constants specific to the particular aircraft, and \( L \) is the lift—the upward force supporting the weight of the plane (or bird). Find the speed that minimizes the required power.}
 \setlength{\parskip}{2em}
 
 To determine the relationship between the power \(P\) and the speed \(v\), we can start with finding the derivative of \(P'\) with respect to \(v\).
@@ -104,7 +105,7 @@ Thus, when \( P'(v) = 0 \) and \( P''(v) > 0 \), \( P \) concaved up, indicating
 the required power \( P \) is minimized.
 
 \subsection*{Part 2:}
-The speed found in Part 1 minimizes power, but a faster speed might use less fuel. The energy needed to propel the airplane/bird a unit distance is \( E = \frac{P}{v} \). At what speed is energy minimized?
+{\large \bfseries The speed found in Part 1 minimizes power, but a faster speed might use less fuel. The energy needed to propel the airplane/bird a unit distance is \( E = \frac{P}{v} \). At what speed is energy minimized?}
 
 To find out the answer, we first need to know the relationship between \( E \) and \( v \). 
 
@@ -133,8 +134,8 @@ Therefore,
   the energy is minimized.
 
 \subsection*{Part 3:}
-How much faster is the speed for minimum energy than the speed for minimum power?
-\setlength{\parskip}{1em}
+{\large \bfseries How much faster is the speed for minimum energy than the speed for minimum power?
+}\setlength{\parskip}{1em}
 
 By observation, we found that both \(V_p\)(the speed \(V\) when power \(p\) is minimized) and \(V_e\) (the speed \(V\) when energy \(e\) is minimized) are 4th root, therefore, we can compare these two value by dividing \(V_e\) by \(V_p\):
 \[\frac{V_e}{V_p}=\frac{\sqrt[4]{\frac{BL^2}{A}}}{\sqrt[4]{\frac{BL^2}{3A}}} = \sqrt[4]{3}\]
@@ -143,11 +144,11 @@ Therefore, we can conclude that, the speed \(V_e\) for minimum energy is \(\sqrt
 
 \subsection*{Part 4:}
 \label{sec:part4}
-In applying the equation of Part 1 to bird flight we split the term \(Av^3\)into two
+{\large \bfseries In applying the equation of Part 1 to bird flight we split the term \(Av^3\)into two
 parts: \(A_bv^3\) for the bird’s body and \(A_wv^3\) for its wings. Let \(x\) be the fraction of flying time spent in flapping mode. If \(m\) is the bird’s mass and all the lift occurs during flapping, then the lift is \(\frac{mg}{x}\) and so the power needed during flapping is:
 \[P_\text{flap} = (A_b+A_w)v^3+\frac{B(\frac{mg}{x})^2}{v}\]
 The power while wings are folded is \(P_\text{fold}=A_bv^3\). Show that the average power over an entire flight cycle is:
-\[\overline{P}=P_\text{flap}+(1-x)P_\text{fold} = A_bv^3+xA_wv^3+\frac{Bm^2g^2}{xv}\]
+\[\overline{P}=P_\text{flap}+(1-x)P_\text{fold} = A_bv^3+xA_wv^3+\frac{Bm^2g^2}{xv}\]}
 
 To address this problem, first, let's break it down:
 
@@ -162,15 +163,16 @@ And the time during flapping is fraction \(x\), then the time during folding wou
 \[\text{the energy spends during folding is } E_\text{fold} = P_\text{fold}\times (1-x)\] 
 \[\text{the total energy spent during the flying cycle would be: }E = E_\text{flap} +E_\text{fold} \]
 And then,let's come back to the definition of power:
- \[\overline{P}=\frac{\Delta E}{\Delta t}=\frac{E}{x+(1-x)}=P_\text{flap} + P_\text{fold}\]
+ \[\overline{P}=\frac{\Delta E}{\Delta t}=\frac{E}{x+(1-x)}=\frac{E_\text{flap}+E_\text{fold}}{1}=\frac{P_\text{flap}x + P_\text{fold}(1-x)}{1}\]
  Therefore:
-\[\overline{P}=P_\text{flap}+(1-x)P_\text{fold} = A_bv^3+xA_wv^3+\frac{Bm^2g^2}{xv}\]
+\[\overline{P}=P_\text{flap}+P_\text{fold}(1-x)=((A_b+A_w)v^3+\frac{B(\frac{mg}{x})^2}{v})x+(A_bv^3)(1-x)\] 
+\[= A_bv^3+xA_wv^3+\frac{Bm^2g^2}{xv}\]
 Thus, we proved the hypothesis of average power during each flying cycle.
 
 
 \subsection*{Part 5:}
-For what value of \(x\) is the average power a minimum?
-\setlength{\parskip}{1em}
+{\large \bfseries For what value of \(x\) is the average power a minimum?
+}\setlength{\parskip}{1em}
 
 We've got the average power \(\overline{P}\) from the part 4, then let's take the derivative of \(\overline{P}\) respect to \(x\):
 \[\overline{P}\text{ }'(x)= A_wv^3-\frac{Bm^2g^2}{x^2v}\]
@@ -178,11 +180,11 @@ and its second derivative:
 \[\overline{P}\text{ }'' = \frac{Bm^2g^2}{x^3v}\]
 We found that, the second derivative of \(\overline{P}\) will be greater than \(0\), then we just need to find the \(x\) to make  \(\overline{P}\text{ }' = 0\):
 \[\text{solve for }x \text{: }\overline{P}\text{ }'(x)= A_wv^3-\frac{Bm^2g^2}{x^2v} =0 \]
-\[A_wv^3 = \frac{Bm^2g^2}{x^2v}, x = \sqrt{\frac{Bm^2g^2}{A_wv^4}} = \frac{mg}{v^2}\sqrt{\frac{B}{A_wv^2}},\text{ and }x > 0\]
-Therefore, when \(x = \frac{mg}{v^2}\sqrt{\frac{B}{A_wv^2}}\), the average power is minimized.
+\[A_wv^3 = \frac{Bm^2g^2}{x^2v}, x = \sqrt{\frac{Bm^2g^2}{A_wv^4}} = \frac{mg}{v^2}\sqrt{\frac{B}{A_w}},\text{ and }x > 0\]
+Therefore, when \(x = \frac{mg}{v^2}\sqrt{\frac{B}{A_w}}\), the average power is minimized.
 
 \subsection*{Part 6:}
-The average energy over a cycle is \(\overline{E} = \frac{\overline{P}}{v}\). What value of \(x\) minimizes \(\overline{E}\) ?
+{\large \bfseries The average energy over a cycle is \(\overline{E} = \frac{\overline{P}}{v}\). What value of \(x\) minimizes \(\overline{E}\) ?}
 
 Since we had \(\overline{P}\) from \hyperref[sec:part4]{part 4}, we can directly calculate \(\overline{E} = \frac{\overline{P}}{v}\):
 \[\overline{E} = \frac{\overline{P}}{v}=  A_bv^2+xA_wv^2 + \frac{Bm^2g^2}{xv^2} \]
@@ -196,17 +198,17 @@ So, when \(\overline{E}\text{ }' = 0\), \(\overline{E}\) has the absolute minimu
 
 Next, we set \(\overline{E}\text{ }' = 0\), and solve for \(x\):
 \[\overline{E}\text{ }' = A_wv^2-\frac{Bm^2g^2}{x^2v^2}, A_wv^2 = \frac{Bm^2g^2}{x^2v^2},\]
-\[x^2=\frac{Bm^2g^2}{A_wv^4}, x = \frac{mg}{v^2}\sqrt{\frac{B}{A_wv^2}},\text{ and }x > 0\]
+\[x^2=\frac{Bm^2g^2}{A_wv^4}, x = \frac{mg}{v^2}\sqrt{\frac{B}{A_w}},\text{ and }x > 0\]
 
-Supprisingly, we got when \(x = \frac{mg}{v^2}\sqrt{\frac{B}{A_wv^2}}\), it minimizes \(\overline{E}\), which is as the same as the value \(x\) minimizes the average energy.
+Supprisingly, we got when \(x = \frac{mg}{v^2}\sqrt{\frac{B}{A_w}}\), it minimizes \(\overline{E}\), which is as the same as the value \(x\) minimizes the average power.
 
 This is because \(\overline{P}= \frac{{\Delta \overline{E}}}{\Delta t}\), and \(\Delta t = x + (1-x) =1\), which make \(\overline{P} = \Delta \overline{E}\ = \overline{E}\).
 
 \subsection*{Conclusion:}
-Based on parts 5 and 6, what can you conclude if the bird flies slowly? What can you conclude if the bird flies faster and faster?
+{\large \bfseries Based on parts 5 and 6, what can you conclude if the bird flies slowly? What can you conclude if the bird flies faster and faster?}
 
 We found the relationship between the flapping time \(x\) and the speed \(v\) to minimize the average power and energy from parts 5 and 6:
-\[x = \frac{mg}{v^2}\sqrt{\frac{B}{A_wv^2}}\]
+\[x = \frac{mg}{v^2}\sqrt{\frac{B}{A_w}}\]
 This shows the time during flapping \(x\) is inverse proportional to \(v^2\), that means, when bird flies slowly, the time during flapping \(x\) increases, when bird flies faster and faster, the time during folding \(1-x\) increases.
 
 \end{document}
