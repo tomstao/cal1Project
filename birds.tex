@@ -6,8 +6,8 @@
 \setlength{\parindent}{0pt}
 % \setlength{\parindent}{10pt}  
 % Adjusts indent size
-\begin{document}
 
+\begin{document}
 
 \begin{titlepage}
     \centering
@@ -20,22 +20,18 @@
     
     \Large
     Tao Su
+    
     \vspace{1.5cm}
-
+    
     \large 
     \textit{HornorsCalc I Fall 2024 Project Final}
+    
     \vfill
 
     \begin{figure}[h]
         \centering
         \includegraphics[width=1\textwidth]{coverPage.png}
-        \caption{\small A flying Bird}
-        \label{fig:cover}
     \end{figure}
-            
-    \Large
-    \today  % or you can replace with a specific date
-    
 \end{titlepage}
 
 \newpage
@@ -148,7 +144,7 @@ Therefore, we can conclude that, the speed \(V_e\) for minimum energy is \(\sqrt
 parts: \(A_bv^3\) for the bird’s body and \(A_wv^3\) for its wings. Let \(x\) be the fraction of flying time spent in flapping mode. If \(m\) is the bird’s mass and all the lift occurs during flapping, then the lift is \(\frac{mg}{x}\) and so the power needed during flapping is:
 \[P_\text{flap} = (A_b+A_w)v^3+\frac{B(\frac{mg}{x})^2}{v}\]
 The power while wings are folded is \(P_\text{fold}=A_bv^3\). Show that the average power over an entire flight cycle is:
-\[\overline{P}=P_\text{flap}+(1-x)P_\text{fold} = A_bv^3+xA_wv^3+\frac{Bm^2g^2}{xv}\]}
+\[\overline{P}=xP_\text{flap}+(1-x)P_\text{fold} = A_bv^3+xA_wv^3+\frac{Bm^2g^2}{xv}\]}
 
 To address this problem, first, let's break it down:
 
@@ -177,7 +173,7 @@ Thus, we proved the hypothesis of average power during each flying cycle.
 We've got the average power \(\overline{P}\) from the part 4, then let's take the derivative of \(\overline{P}\) respect to \(x\):
 \[\overline{P}\text{ }'(x)= A_wv^3-\frac{Bm^2g^2}{x^2v}\]
 and its second derivative:
-\[\overline{P}\text{ }'' = \frac{Bm^2g^2}{x^3v}\]
+\[\overline{P}\text{ }'' = \frac{2Bm^2g^2}{x^3v}\]
 We found that, the second derivative of \(\overline{P}\) will be greater than \(0\), then we just need to find the \(x\) to make  \(\overline{P}\text{ }' = 0\):
 \[\text{solve for }x \text{: }\overline{P}\text{ }'(x)= A_wv^3-\frac{Bm^2g^2}{x^2v} =0 \]
 \[A_wv^3 = \frac{Bm^2g^2}{x^2v}, x = \sqrt{\frac{Bm^2g^2}{A_wv^4}} = \frac{mg}{v^2}\sqrt{\frac{B}{A_w}},\text{ and }x > 0\]
@@ -192,7 +188,7 @@ Then, let's take its derivative with respect to \(x\):
 \[\overline{E}\text{ }' = A_wv^2-\frac{Bm^2g^2}{x^2v^2}\]
 
 again, we need its second derivative with respect to \(x\) to determine its extremum:
-\[\overline{E}\text{ }'' = \frac{Bm^2g^2}{x^3v^2},\]
+\[\overline{E}\text{ }'' = \frac{2Bm^2g^2}{x^3v^2},\]
 \[\text{both }Bm^2g^2 \text{ and } x^3v^2 \text{ are positive, therefore, } \overline{E} \text{ }'' > 0\]
 So, when \(\overline{E}\text{ }' = 0\), \(\overline{E}\) has the absolute minimum value.
 
@@ -209,6 +205,8 @@ This is because \(\overline{P}= \frac{{\Delta \overline{E}}}{\Delta t}\), and \(
 
 We found the relationship between the flapping time \(x\) and the speed \(v\) to minimize the average power and energy from parts 5 and 6:
 \[x = \frac{mg}{v^2}\sqrt{\frac{B}{A_w}}\]
-This shows the time during flapping \(x\) is inverse proportional to \(v^2\), that means, when bird flies slowly, the time during flapping \(x\) increases, when bird flies faster and faster, the time during folding \(1-x\) increases.
+This shows the time during flapping \(x\) is inverse proportional to \(v^2\), that means, when bird flies slowly, the time during flapping \(x\) increases, when bird flies faster and faster, the time during folding \(1-x\) increases. And given the certain energy, if the bird needs to fly fast in order to catch the prey, its power will increase, this results the time of bird's fly cycle decreases, after the bird catches the prey, it will slow down, and the time of bird's fly cycle increases, otherwise, the bird needs to spend more energy to keep flying;  So, the bird's survive strategy is to fly fast when it needs to, and slow down when it doesn't need to, in order to minimize the energy consumption.
+
+\textbf{\textit{But}}, the real world is far more complicated than our model, the bird's flight is influenced by many factors, such as the wind, the temperature, the humidity, and the bird's physical condition, etc. And if a bird flies too slow, it nees more energy to maintain its lift to stay aloft, if the bird flies too fast, the air resistance increases significantly, neither the extreme case is the optimal survive strategy for the bird, I really want to discuss about the optimal flying strategy, but the wisdom hides inside the body of a tiny bird is far beyond than my limit. Therefore, the bird's flight strategy is not only determined by the speed, but also by the environment and the bird's physical condition. These found make me agiain appreciate the complexity of the nature, and the beauty of the mathematics.
 
 \end{document}
